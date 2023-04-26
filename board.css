@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.board {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black
+}
+
+.legend, .char>p {
+  width: 100px;
+  height: 100px;
+  border: solid 1px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0
+}
+
+.char .square:nth-of-type(even) {
+  background-color: white;
+}
+.char:nth-of-type(even) .square:nth-of-type(even) {
+  background-color: gray;
+}
+
+.char .square:nth-of-type(odd) {
+  background-color: gray;
+}
+
+.char:nth-of-type(even) .square:nth-of-type(odd) {
+  background-color: white;
+}
